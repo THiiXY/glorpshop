@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glorp Shop</title>
+<style>
+	:root { color-scheme: dark; }
+	* { box-sizing: border-box; margin: 0; }
+	body { font-family: system-ui, -apple-system, sans-serif; background: #0e0e10; color: #efeff1; padding: 24px 16px 64px; max-width: 720px; margin: 0 auto; line-height: 1.5; }
+	h1 { font-size: 1.7rem; margin: 8px 0 4px; }
+	.sub { color: #adadb8; margin-bottom: 28px; }
+	h2 { font-size: 1.15rem; margin: 32px 0 4px; color: #bf94ff; }
+	.how { color: #adadb8; font-size: .9rem; margin-bottom: 10px; }
+	table { width: 100%; border-collapse: collapse; }
+	td { padding: 8px 10px; border-bottom: 1px solid #26262c; }
+	tr:last-child td { border-bottom: none; }
+	code { background: #26262c; padding: 2px 7px; border-radius: 5px; font-size: .85rem; color: #efeff1; }
+	.price { text-align: right; font-variant-numeric: tabular-nums; color: #ffd37a; white-space: nowrap; }
+	.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 4px; vertical-align: -2px; margin-right: 7px; }
+	.note { color: #808089; font-size: .8rem; }
+	.footer { margin-top: 40px; color: #808089; font-size: .85rem; border-top: 1px solid #26262c; padding-top: 14px; }
+</style>
+</head>
+<body>
+	<h1>Glorp Shop</h1>
+	<p class="sub">Everything you can buy for your glorp on <strong>twitch.tv/thiixy</strong> — prices in THiiCoins.</p>
+
+	<h2>Colors</h2>
+	<p class="how">Buy in chat with <code>!glorpbuy &lt;color&gt;</code>. Once you own a color, switching back to it is free.</p>
+	<table>
+	<tr>
+		<td><span class="swatch" style="background:#4ade80"></span> Green <span class="note">(everyone starts with this one)</span></td>
+		<td><code>glorp</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:#60a5fa"></span> Blue</td>
+		<td><code>glorpb</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:#f87171"></span> Red</td>
+		<td><code>glorpr</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:#a78bfa"></span> Purple</td>
+		<td><code>glorpp</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:#f9a8d4"></span> Pink</td>
+		<td><code>glorppi</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:#fde047"></span> Yellow</td>
+		<td><code>glorpy</code></td>
+		<td class="price">10K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:linear-gradient(135deg,#fde047,#f59e0b)"></span> Gold</td>
+		<td><code>glorpgo</code></td>
+		<td class="price">250K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:linear-gradient(135deg,#818cf8,#c084fc,#f472b6)"></span> Galaxy</td>
+		<td><code>glorpga</code></td>
+		<td class="price">250K</td>
+	</tr>
+	<tr>
+		<td><span class="swatch" style="background:linear-gradient(135deg,#e0f2fe,#7dd3fc)"></span> Ice</td>
+		<td><code>glorpic</code></td>
+		<td class="price">250K</td>
+	</tr></table>
+
+	<h2>Auras</h2>
+	<p class="how">Effects layered on top of your glorp. Buy with <code>!glorpbuy &lt;aura&gt;</code>.</p>
+	<table>
+	<tr>
+		<td>Sparkle</td>
+		<td><code>glorpsparkle</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Flames</td>
+		<td><code>glorpflames</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Lightning</td>
+		<td><code>glorplightning</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Cosmic</td>
+		<td><code>glorpcosmic</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Snow</td>
+		<td><code>glorpsnow</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Glitter</td>
+		<td><code>glorpglitter</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>EDM</td>
+		<td><code>glorpedm</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Tech</td>
+		<td><code>glorptech</code></td>
+		<td class="price">100K</td>
+	</tr>
+	<tr>
+		<td>Rich</td>
+		<td><code>glorprich</code></td>
+		<td class="price">1M</td>
+	</tr></table>
+
+	<h2>Ranks</h2>
+	<p class="how">Sequential — buy your next rank with <code>!glorpbuy rankup</code>. Ranks raise your duel odds, your max duel wager, and your <code>!daily</code>.</p>
+	<table>
+	<tr><td>Rookie</td><td class="price">free (start)</td></tr>
+	<tr><td>Contestant</td><td class="price">50K</td></tr>
+	<tr><td>Veteran</td><td class="price">200K</td></tr>
+	<tr><td>Champion</td><td class="price">500K</td></tr>
+	<tr><td>Legend</td><td class="price">1M</td></tr>
+	<tr><td>Elite</td><td class="price">5M</td></tr>
+	<tr><td>Mythic</td><td class="price">10M</td></tr>
+	<tr><td>Immortal</td><td class="price">100M</td></tr></table>
+
+	<h2>Food</h2>
+	<p class="how">Restores your glorp's Condition. Feed with <code>!glorpgive &lt;food&gt;</code> (you can feed other people's glorps too).</p>
+	<table>
+	<tr>
+		<td>Floor Crumbs</td>
+		<td>+5 Condition</td>
+		<td class="price">100</td>
+	</tr>
+	<tr>
+		<td>Light's Lettuce</td>
+		<td>+12 Condition</td>
+		<td class="price">400</td>
+	</tr>
+	<tr>
+		<td>Arena Angus Burger</td>
+		<td>+25 Condition</td>
+		<td class="price">1.5K</td>
+	</tr>
+	<tr>
+		<td>Scotty's Sundae</td>
+		<td>+40 Condition</td>
+		<td class="price">3K</td>
+	</tr>
+	<tr>
+		<td>Respawn Ribeye</td>
+		<td>+60 Condition</td>
+		<td class="price">6K</td>
+	</tr>
+	<tr>
+		<td>OSPUZE</td>
+		<td>+100 Condition</td>
+		<td class="price">12K</td>
+	</tr></table>
+
+	<div class="footer">Adopt for free with <code>!glorp</code> · commands: <code>!glorpcommands</code> · auto-generated from the live shop config</div>
+</body>
+</html>
